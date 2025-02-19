@@ -1,0 +1,56 @@
+* {
+	margin: 0px;
+}
+#runningTime {
+	width: 80%;
+	height: 13.5%;
+	text-align: center;
+	background-color: #E9EAEC;
+	border-radius: 25px;
+	margin-bottom: 0.25%;
+}
+#baner {
+	margin-bottom: 0.25%;
+	background-color: blue;
+	text-align: center;
+	width: 80%;
+	height: 25%;
+	border-radius: 25px;
+}
+header {
+	margin-bottom: 0.25%;
+	background-color: #FAD02C;
+	text-align: center;
+	width: 80%;
+	height: 15%;
+	border-radius: 25px;
+}
+#flex {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+	
+	background-color: #90ADC6;
+	text-align: center;
+	width: 25%;
+	height: 45%;
+	border-radius: 25px;
+}
+main {
+	background-color: #333652;
+	margin-left: 0.25%;
+	text-align: center;
+	width: 54.75%;
+	height: 45%;
+	border-radius: 25px;
+}
+img {
+	width: 100%;
+	height: 100%;
+	border-radius: 25px;
+}

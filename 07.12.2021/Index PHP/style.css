@@ -1,0 +1,35 @@
+#menu1, #menu2, #menu3, #menu4, #menu5 {
+    background-color: rgb(57, 180, 107);
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    width: 20%;
+    height: 220px;
+
+}
+#flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+a {
+    color: white;
+}
+#main {
+    height: 300px;
+}
+footer {
+    background-color: rgb(57, 180, 107);
+    color: white;
+    text-align: center;
+    font-size: 150%;
+}
+button {
+    background-color: green;
+    border: 1px solid green;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+}
+h1 {
+    color: rgb(27, 163, 82);
+}

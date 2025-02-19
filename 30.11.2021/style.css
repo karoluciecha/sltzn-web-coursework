@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: navy;
+}
+#wrapper {
+    background: cornflowerblue;
+}
+
+div {
+    padding: 10px;
+    text-align: center;
+}

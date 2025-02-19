@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form</title>
+</head>
+<body>
+    <section>
+        <h1>Data Form</h1>
+        <fieldset style="border: dotted">
+            <form action="" method="post">
+                <label for="name">First Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="surname">Last Name:</label><br>
+                <input type="text" id="surname" name="surname" required><br>
+                
+                <label for="birthdate">Date of Birth:</label><br>
+                <input type="date" id="birthdate" name="birthdate" required><br>
+                
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="1" max="99"><br>
+                
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <input type="checkbox" id="climbing" name="interests" value="mountain climbing">
+                    <label for="climbing">Mountain Climbing</label><br>
+                    <input type="checkbox" id="painting" name="interests" value="painting">
+                    <label for="painting">Painting</label><br>
+                    <input type="checkbox" id="reading" name="interests" value="reading">
+                    <label for="reading">Reading</label><br>
+                    <input type="checkbox" id="cooking" name="interests" value="cooking">
+                    <label for="cooking">Cooking</label><br>
+                    <input type="checkbox" id="gardening" name="interests" value="gardening">
+                    <label for="gardening">Gardening</label><br>
+                    <input type="checkbox" id="dancing" name="interests" value="dancing">
+                    <label for="dancing">Dancing</label><br>
+                    <input type="checkbox" id="photography" name="interests" value="photography">
+                    <label for="photography">Photography</label><br>
+                </fieldset>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                
+                <label for="message">Message (optional):</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                
+                <button type="submit">Submit</button>
+                <button type="submit" formnovalidate>Submit without validation</button>
+                <button type="reset">Reset</button>
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>

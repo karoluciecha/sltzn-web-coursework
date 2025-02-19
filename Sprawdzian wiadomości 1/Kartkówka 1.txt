@@ -1,0 +1,12 @@
+1. Zasady nazewnictwa zmiennych:
+
+Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_". Zmienna nie może zaczynać się od cyfry.
+Nazwa zmiennej to dowolna kombinacja dużych i małych liter, cyfr i znaku "_" i "$".
+Nazwa nie może zawierać polskich znaków.
+Zmienna nie może być słowem kluczowym danego języka - JavaScipt.
+
+2. Czym różni się zapis ++n a n++? Wyaśnić:
+
+Preinkrementacja (++n) powoduje zwiększenie wartości zmiennej o jeden, ale jej zwiększenie następuje przed wykorzystaniem zmiennej w kodzie.
+
+Postinkrementacja (n++) powoduje zwiększenie wartości zmiennej o jeden, ale jej zwiększenie następuje po wykorzystaniu zmiennej w kodzie.

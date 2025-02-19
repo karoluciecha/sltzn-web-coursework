@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Arial';
+    background-color: rgb(244, 164, 96);
+    color: white;
+}
+
+.main
+{
+    clear: both;
+    background-color: rgb(128, 0, 0);
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+
+#cookie
+{
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+
+.s1
+{
+    text-align: center;
+    float: left;
+    width: 75%;
+    height: 150px;
+    font-size:200%;
+}
+
+.s2
+{
+    float: left;
+    text-align: center;
+    width: 25%;
+    height: 50px;
+}
+
+p.ciasto
+{
+    padding: 20px;
+    font-size: 150%;
+    border: 2px dotted rgb(169, 169, 169);
+}
+p {
+	padding: 20px;
+    font-size: 150%;
+}
+p.ciasto:hover
+{
+    background-color: rgb(169, 169, 169);
+}
+
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}   
+
+td, th
+{
+    border-radius: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    padding: 5px;
+}    
+
+.pobierz
+{
+    float: left;
+    width: 50%;
+
+
+}
+.autor {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+.cookiefix {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 75%;
+	height: 60%;
+	transform: translate(-50%, -70%);
+	background-color: rgb(169, 169, 169);
+	text-align: center;
+    border-radius: 50%;
+}

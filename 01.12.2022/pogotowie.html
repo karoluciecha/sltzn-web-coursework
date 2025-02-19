@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pogotowie Ratunkowe</title>
+	<link rel="stylesheet" href="styl5.css">
+</head>
+<body>
+<header>
+<section class="left">
+<img src="obraz.jpg" alt="pogotowie">
+</section>
+<section class="center">
+<h1>Pogotowie<br>Ratunkowe</h1>
+</section>
+<section class="right">
+<p>Kontakt:<br>022 222 11 333</p>
+</section>
+</header>
+<main>
+<h2>Dodaj nowe zgłoszenie</h2><br>
+<form method="POST" action="zgloszenie.php">
+<label for="nrzr">Numer zespołu ratowniczego:</label><br>
+<input type="number" id="nrzr" name="nrzr"><br>
+<label for="nrd">Numer dyspozytora:</label><br>
+<input type="number" id="nrd" name="nrd"><br>
+<label for="a">Adres:</label><br>
+<input type="text" id="a" name="a" size="100"><br>
+<input type="reset" value="WYCZYŚĆ">
+<input type="submit" value="ZGŁOŚ">
+</form>
+</main>
+<footer>
+<section class="left">
+<h4>Numery alarmowe</h4>
+<ul>
+<li>999</li>
+<li>112</li>
+</ul>
+</section>
+<section class="center">
+<a href="kwerendy.txt" download>Pobierz kwerendy</a>
+</section>
+<section class="right">
+<p>Autor<br>Karol Uciecha 4d</p>
+</section>
+</footer>
+</body>
+</html>

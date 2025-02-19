@@ -1,0 +1,113 @@
+/*
+Notatka:
+Wszystkie niezbędne pliki tworzymy w miejscu docelowym – na serwerze.
+Miejsce docelowe na serwerze XAMPP: folder htdocs  w miejscu instalacji. Do działania pliku PHP potrzebny jest sewer.
+Tworzymy wszystkie pliki jak w poleceniach, nawet jeśli któryś z nich miałby być pusty.
+Przed tworzeniem stylów należy utworzyć plik html, w którym zostały utworzone klasy lub identyfikatory.
+Przed rozpoczęciem pisania stylów należy wykonać reset styli.
+Strona tworzona jest na elementach pływających. Do wielkości elementów należy doliczyć takie elementy jak: dopełnienie, margines czy obramowanie.
+Zadamie domowe (poniżej): 2px obramowania czarną linią do każdego elementu sekcji oprócz głównego elementu.
+*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.gowny {
+	height: 600px;
+	width: 800px;
+	margin: auto;
+	 
+}
+
+
+.header {
+    background-color: #dfdfdf;	
+	height: 126px;
+	width: 796px;
+	border: 2px solid black;
+}
+
+.pasek {
+	background-color: #bfbfbf;	
+	height: 18px;
+	width: 796px;
+	color: red;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.menu  {
+	background-color: #5f5f5f;
+	height: 400px;
+	width: 126px;
+	float: left;
+	padding: 20px;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+}
+
+.content {
+	  background-color: #7f7f7f;
+	  width: 628px;
+	  height: 420px;
+	  text-align: center;
+	  float: right;
+	  font-size: 35px;
+	  padding-top: 20px;
+	  overflow: auto;
+	  resize: none;
+	  border-right: 2px solid black;
+}
+
+.footer {
+	   background-color: #afafaf;
+	   height: 126px;
+	   width: 796px;
+	   float: right;
+	   font-size: 35px;
+	   text-align: center;
+	   color: yellow;
+	   padding-top: 40px;
+	   border: 2px solid black;
+}
+
+.men{
+text-align: center;
+font-size: 14px;
+color: #FFF;
+font-style: italic;
+}
+
+.nag{
+text-align: center;
+color: green;
+font-size: 35px;
+padding-top: 50px;
+color: green;
+}
+
+p{
+font-size: 14px;
+text-align: left;
+color: magenta;
+padding: 20px;
+font-style: oblique;
+}
+
+ul{
+list-style-type: none;
+}
+
+.data{
+text-align: center;
+font-size: 24px;
+color: #000000;
+}
+
+A:link {color:black;}
+A:visited {color:green;}
+A:hover {color:red; text-decoration:none/*underline*/;}
+A:active {color:blue;}

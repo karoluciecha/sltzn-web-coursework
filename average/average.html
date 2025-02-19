@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>High School</title>
+    <link rel="stylesheet" type="text/css" href="styleAverage.css">
+</head>
+
+<body>
+    <section id='banner'>
+        <h1>High School Website Project</h1>
+    </section>
+    <section id='left'>
+        <br><h3>Downloads</h3><br>
+        <ul>
+            <li><a onclick='showTable()'><ins>SQL Queries</ins></a></li>
+            <li><a onclick='showTable()'><ins>Database</ins></a></li>
+        </ul><br>
+        <hr>
+        <br><h3>Determine Highest Average</h3><br>
+        <ul>
+            <li><span>Polak </span><input type='number' id="polak"></li>
+            <li><span>Nowak </span><input type='number' id="nowak"></li>
+            <li><span>Rysik </span><input type='number' id="rysik"></li>
+        </ul><br>
+        <button onclick="calculateHighestAverage()">Determine</button><br><br>
+        <h3>Highest Average:</h3>
+        <p id="highest"></p>
+    </section>
+    <section id='right'>
+    </section>
+    <div id='content'>
+    </div>
+    <footer>
+        <h4>Page created by: Uciecha</h4>
+    </footer>
+    <script src="scriptAverage.js"></script>
+</body>
+</html>

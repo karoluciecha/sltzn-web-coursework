@@ -1,0 +1,4 @@
+1. INSERT INTO `uczen` (`id`, `nazwisko`, `imie`, `id_klasy`) VALUES ('27', 'Jasny', 'Wiktoria', '1');
+2. SELECT wychowawca.imie, wychowawca.nazwisko FROM wychowawca INNER JOIN uczen ON wychowawca.id_klasy= uczen.id_klasy WHERE uczen.nazwisko = "Markiewicz";
+3. CREATE USER 'Jan_Bogucki'@'localhost' IDENTIFIED BY 'jb_123';
+4. GRANT SELECT, INSERT, DROP ON szkola.uczen TO 'Jan_Bogucki'@'localhost';

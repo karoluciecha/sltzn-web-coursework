@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formatting</title>
+    <link rel="stylesheet" type="text/css" href="styleFormats.css">
+</head>
+
+<body>
+    <div id='banner'>
+        <h1>Formatting HTML Documents</h1>
+    </div>
+    
+    <div id='section1'>
+        <h2>Example List - Hobbies</h2>
+        <ul>
+            <li>Music</li>
+            <li>Tourism</li>
+            <ol>
+                <li>Mountains</li>
+                <li>Lakes</li>
+                <li>Biking</li>
+            </ol>
+            <li>Books</li>
+        </ul>
+    </div>
+    
+    <div id='section2'>
+        <h2>Example Table - Daily Schedule</h2>
+        <table>
+            <tr>
+                <th>Time of Day</th>
+                <th>Activities</th>
+            </tr>
+            <tr>
+                <td>Morning</td>
+                <td>Studying</td>
+            </tr>
+            <tr>
+                <td>Noon</td>
+                <td>Extra Classes</td>
+            </tr>
+            <tr>
+                <td>Afternoon</td>
+                <td rowspan="2">My Hobby</td>
+            </tr>
+            <tr>
+                <td>Evening</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id='section3'>
+        <img src='tekst.png' alt='Web Technology'>
+    </div>
+
+    <div id='content'>
+        <label for="fontSize">Enter text size in percentage: </label>
+        <input type='number' id='fontSize'><label for="fontSize">%</label><br>
+
+        <select id="styleSelect">
+            <option value="normal">Normal</option>
+            <option value="italic">Italic</option>
+        </select>
+
+        <p>Select a color to format the text:</p>
+        <button onclick='changeColor("red")'></button>
+        <button onclick='changeColor("green")'></button>
+        <button onclick='changeColor("blue")'></button>
+
+        <p id='modifiableText'>This is an example paragraph that can be formatted dynamically using JavaScript.</p>
+    </div>
+
+    <footer>
+        <p>Text formatting by: <i>Uciecha</i></p>
+        <a href='https://www.formatting.com'>Visit also</a>
+    </footer>
+
+    <script src="scriptFormats.js"></script>
+</body>
+</html>

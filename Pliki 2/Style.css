@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+* { /* Tzw. reset stylów */
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	text-decoration: none;
+	line-height: 1em;
+}
+
+body {
+	margin-top: 0.5cm;
+	margin-left: 4cm;
+	margin-right: 2cm;
+}
+
+h2 {
+	margin-left: 5cm;
+}
+
+h6 {
+	color: red;
+}
+
+a {
+	font-size: 1.6em;
+}
+
+a:hover {
+	color: #0F3;
+}
+
+h1:hover {
+	color: #900;
+}
+
+a:link {
+color: black;
+}
+
+a:visited {
+color: green;
+}
+
+a:hover {
+color: red;
+text-decoration: underline;
+}
+
+a:active {
+color: blue;
+}
+
+/* a.nazwaklasy:hover {
+color: silver;
+} */
+
+p:first-letter {
+color: red;
+font-size: xx-large;
+}
+
+p:first-line {
+font-variant:small-caps;
+}
+
+h1:before {
+content: "Rozdział: ";
+}
+
+/* h1:before {
+content:"Dziady Adama Mickiewicza: ";
+color: silver;
+}
+
+p:first-letter {
+color: pink;
+font-size: xx-large;
+font-family: Old English Text MT;
+font-size: 2cm;
+text-shadow: 6px 6px 4px red;
+}
+
+p:first-line {
+font-variant: small-caps;
+color: green;
+}
+
+p {
+text-indent: 4cm;
+}
+
+p.h1 {
+color: blue;
+margin-left: 5cm;
+}
+
+p.h2 {
+color: orange;
+margin-left: 6cm;
+}
+
+p.h3 {
+color: yellow;
+margin-left: 7cm;
+}
+
+p.h4 {
+color: red;
+margin-left: 8cm;
+}
+
+p.h5 {
+color:violet;
+margin-left: 9cm;
+}
+
+#wyrozniony {
+color:white;
+} */

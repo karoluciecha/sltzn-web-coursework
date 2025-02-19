@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+background-image: url(background.png);
+background-repeat: repeat-x;
+background-color: #99ccff;
+}
+div#content {
+width: 960px;
+background-color: #FFF;
+margin-left: auto;
+margin-right: auto;
+}
+div.prost {
+width: 400px;
+height: 200px;
+}
+div#czerwony {
+background-color: #F00;
+position: static;
+/* position: relative;
+top: 50px;
+left: 50px; */
+}
+div#zielony {
+background-color: #0F0;
+position: absolute;
+top: 1000px;
+left: 900px;
+}
+div#zolty {
+background-color: #FF0;
+position: fixed;
+top: 50px;
+left: 400px;
+opacity: 0.6; /* Przezroczystość */
+}

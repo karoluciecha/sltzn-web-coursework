@@ -1,0 +1,30 @@
+body {
+	background:
+      linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+	height: 100%;
+	margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#clock {
+	font-family: "Ink Free";
+	font-weight: 1000;
+	color: black;
+	font-size: 56px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+/*
+.content {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+*/

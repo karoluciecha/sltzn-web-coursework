@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+p { /* Odnosi się do akapitu */
+	color: #800;
+	font-size: 0.7em;
+}
+
+h1 { /* Odnosi się do poziomu pierwszego nagłówka */
+	color: #C00;
+}
+
+h3 { /* Odnosi się do poziomu trzeciego nagłówka */
+	color: #F00;
+}
+.tytul { /* Odnosi się do klasy tytuł */
+font-size: 2.8em;
+}
+.opis {
+	font-size: 0.4em;
+}
+p.opis { /* Odnosi się do akapitu z klasą opis */
+	font-size: 0.4em;
+}
+h1.opis { /* Odnosi się do poziomu pierwszego nagłówka z klasą opis */
+	font-size: 0.2em;
+}

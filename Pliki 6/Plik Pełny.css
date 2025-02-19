@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+body {
+	background-image: url(ahri-midnight-splash.jpg);
+	background-color: #FFF;
+	background-size: contain;
+}
+.title {
+	font-family: "Calibri Light", serif;
+	font-size: 3em;
+	text-align: center;
+	line-height: 0.5;
+	text-transform: uppercase;
+}
+.subtitle {
+	font-family: "Calibri Light", serif;
+	text-align: center;
+	line-height: 0.5;
+	font-size: 2em;
+	color: #c8aa6e;
+	text-transform: uppercase;
+}
+.content {
+	background-color: rgba(255,255,255,0.25);
+	overflow: auto;
+	text-align: justify;
+}
+h3 {
+	margin-top: 100px;
+	margin-left: 50px;
+	font-family: "Calibri Light", serif;
+	text-transform: uppercase;
+}
+p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.text {
+	font-family: Calibri, sans-serif;
+	font-size: 1.25em;
+	column-count: 3;
+	column-gap: 3em;
+	column-rule: 1px solid #000;
+	text-indent: 1.5em;
+}
+.footer {
+	text-align: center;
+	font-size: 0.75em;
+}
