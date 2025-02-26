@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.banner {
+    background-color: #6B4F4F;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #8C6A5D;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #B0927E;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.panel {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.panel_left {
+    background-color: #A67C68;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.panel_center {
+    background-color: #D9B08C;
+    flex: 2;
+    margin-right: 10px;
+}
+
+.panel_right {
+    background-color: #A67C68;
+    flex: 1;
+}
+
+h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.footer {
+    text-align: center;
+    background-color: #6B4F4F;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
