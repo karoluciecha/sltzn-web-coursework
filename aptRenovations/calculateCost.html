@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Apartment Renovations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="flex">
+        <div id="menu1">
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <div id="menu2">
+            <a href="aptRenovations.html">ABOUT US</a>
+        </div>
+        <div id="menu3">
+            <a href="contactDetails.html">ADDRESS</a>
+        </div>
+        <div id="menu4">
+            <a href="calculateCost.html">CALCULATE</a>
+        </div>
+        <div id="menu5">
+            <a href="http://www.jakremontowac.pl/" target="_blank">LINKS</a>
+        </div>
+    </div>
+    <div id="main">
+        <h1>Bathroom Tiling Calculator</h1>
+        <label for="pow">Surface area (m<sup>2</sup>): </label>
+        <input type="number" id="pow" step="0.01"><br><br>
+        <input type="radio" name="tiles" id="radio1">
+        <label for="radio1">Tiles 20 x 20 cm</label><br>
+        <input type="radio" name="tiles" id="radio2">
+        <label for="radio2">Tiles 25 x 12 cm</label><br><br>
+        <button onclick="calc()">CALCULATE</button>
+        <p id="result"></p>
+    </div>
+    <footer>
+        <p>Website by: Karol Uciecha</p>
+    </footer>
+
+    <script>
+        function calc() {
+            let surface = parseFloat(document.getElementById("pow").value);
+            let resultElement = document.getElementById("result");
+
+            if (isNaN(surface) || surface <= 0) {
+                resultElement.style.color = "red";
+                resultElement.innerHTML = "Error: Enter a valid surface area.";
+                return;
+            }
+
+            if (!document.getElementById("radio1").checked && !document.getElementById("radio2").checked) {
+                resultElement.style.color = "red";
+                resultElement.innerHTML = "Error: Please select a tile type.";
+                return;
+            }
+
+            let cost = document.getElementById("radio1").checked ? surface * 70 : surface * 80;
+            resultElement.style.color = "black";
+            resultElement.innerHTML = `Estimated tiling cost: ${cost.toFixed(2)} PLN.`;
+        }
+    </script>
+</body>
+
+</html>

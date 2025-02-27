@@ -1,0 +1,131 @@
+/* * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Arial;
+}
+
+.banner, .main {
+	background-color: RGB(220, 220, 220);
+	padding: 20px;
+	text-align: center;
+}
+
+.m_lewy, .m_prawy {
+	float: left;
+	width: 50%;
+	background-color: RGB(255, 127, 80);
+	color: white;
+	height: 410px;
+}
+
+.f_lewy, .f_prawy {
+	background-color: RGB(255,127,80);
+	color: white;
+	width: 50%;
+	height: 100px;
+	float: left;
+}
+
+table, td {
+	border: 1px solid RGB(255,127,80);
+	padding: 10px;
+	text-align: center;
+}
+
+table {
+	margin: auto;
+}
+
+a {
+	color: white;
+}
+div.f_prawy>button {
+	background-color: RGB(255,127,80)
+} */
+ /* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Banner */
+.banner {
+    background-color: #dcdcdc;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation menu */
+.menu-left, .menu-right {
+    float: left;
+    width: 50%;
+    height: 410px;
+    background-color: #ff7f50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-left img, .menu-right img {
+    width: 80%;
+    max-width: 200px;
+}
+
+/* Main content */
+.main {
+    background-color: #dcdcdc;
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid #ff7f50;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff7f50;
+    color: white;
+}
+
+/* Footer */
+.footer-left, .footer-right {
+    background-color: #ff7f50;
+    color: white;
+    width: 50%;
+    height: 100px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-right button {
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: white;
+}

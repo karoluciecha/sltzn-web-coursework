@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fuel Consumption Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <h2>Welcome to Our Gas Station!</h2>
+    </div>
+    <div class="menu-left">
+        <a href="gasStation.html"> <img src="storeSign.png" alt="Home" /> </a> <br>
+        <a href="calculateFuel.html"> <img src="gasSign.png" alt="Fuel Calculation" /> </a>
+    </div>
+    <div class="menu-right">
+        <img src="car.png" alt="Car Graphic">
+    </div>
+    <div class="main">
+        <h2>Calculate How Much Fuel You Need</h2>
+        <form id="fuelForm">
+            <label for="distance">Distance to travel (km):</label><br>
+            <input type="number" id="distance" name="distance" required><br>
+
+            <label for="consumption">Car fuel consumption (L/100km):</label><br>
+            <input type="number" id="consumption" name="consumption" step="0.01" required><br>            
+
+            <button type="submit">CALCULATE</button>
+        </form>
+        
+        <h3 id="result"></h3>
+    </div>
+    <div class="footer-left">
+        <p>Page developed by: Karol Uciecha</p>
+    </div>
+    <div class="footer-right">
+        <button><a href="queries.txt">Download Queries</a></button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("fuelForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent page reload
+
+                // Get input values
+                let distance = parseFloat(document.getElementById("distance").value);
+                let consumption = parseFloat(document.getElementById("consumption").value);
+
+                // Validate inputs
+                if (isNaN(distance) || isNaN(consumption) || distance <= 0 || consumption <= 0) {
+                    document.getElementById("result").textContent = "Please enter valid positive numbers.";
+                    return;
+                }
+
+                // Calculate required fuel
+                let requiredFuel = (distance * consumption) / 100;
+                document.getElementById("result").textContent = `You need approximately ${requiredFuel.toFixed(2)} liters of fuel.`;
+            });
+        });
+    </script>
+</body>
+</html>
