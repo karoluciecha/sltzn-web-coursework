@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Announcements Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="banner">
+        <h1>Announcements Portal</h1>
+    </section>
+    <section id="info_first">
+        <img src="logo-small.png" alt="Logo">
+    </section>
+    <section id="info_second">
+        <h3>Address</h3>
+        <p>45 Morska Street<br> Gdynia</p>
+    </section>
+    <section id="info_third">
+        <h3>Phone</h3>
+        <p>+48 601 601 601</p>
+    </section>
+    <section id="info_fourth">
+        <h3>Email</h3>
+        <p>announcements@email.com</p>
+    </section>
+    <section id="left">
+        <h2>Advertisement Pricing</h2>
+        <table>
+            <tr>
+                <th>Number of Ads</th>
+                <th>Price per Ad</th>
+                <th>Bonus</th>
+            </tr>
+            <tr>
+                <td>1 - 50</td>
+                <td>2 PLN</td>
+                <td rowspan="2">Newsletter subscription grants a 0.20 PLN discount per ad</td>
+            </tr>
+            <tr>
+                <td>51 or more</td>
+                <td>1 PLN</td>
+            </tr>
+        </table>
+    </section>
+    <section id="center">
+        <h2>Welcome to Our Portal!</h2>
+        <img src="logo-big.png" alt="Announcements">
+    </section>
+    <section id="right">
+        <h2>How much does an ad cost?</h2>
+        <form>
+            <label for="ad_count">Enter the number of ads:</label><br>
+            <input type="number" id="ad_count" name="ad_count" min="1"><br>
+            <input type="checkbox" id="discount" name="discount" value="discount">
+            <label for="discount">Apply newsletter discount</label><br>
+            <input type="button" value="Calculate" id="calculate_btn" onclick="calculatePrice()"><br><br>
+        </form>
+        <p id="result"></p>
+        <button id="btn_yes" onclick="calculateWithoutDiscount()">Yes</button>
+        <button id="btn_no" onclick="clearResult()">No</button>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <p>Website created by: Karol Uciecha</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency Medical Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <section class="left">
+        <img src="ambulance.jpg" alt="Emergency Services">
+    </section>
+    <section class="center">
+        <h1>Emergency Medical Services</h1>
+    </section>
+    <section class="right">
+        <p>Contact:<br>022 222 11 333</p>
+    </section>
+</header>
+
+<main>
+    <h2>Report a New Emergency</h2>
+    <form method="POST" action="submitReport.php">
+        <label for="team_number">Rescue Team Number:</label><br>
+        <input type="number" id="team_number" name="team_number" required><br>
+
+        <label for="dispatcher_number">Dispatcher Number:</label><br>
+        <input type="number" id="dispatcher_number" name="dispatcher_number" required><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" size="100" required><br>
+
+        <input type="reset" value="CLEAR">
+        <input type="submit" value="SUBMIT">
+    </form>
+</main>
+
+<footer>
+    <section class="left">
+        <h4>Emergency Numbers</h4>
+        <ul>
+            <li>999</li>
+            <li>112</li>
+        </ul>
+    </section>
+    <section class="center">
+        <a href="queries.txt" download>Download Queries</a>
+    </section>
+    <section class="right">
+        <p>Author:<br>Karol Uciecha</p>
+    </section>
+</footer>
+</body>
+</html>

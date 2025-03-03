@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Sequences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="banner1">
+        <h1>Explore Number Sequences</h1>
+    </div>
+    <div id="banner2">
+        <a href="numbers.html"><h5>Arithmetic Sequences</h5></a>
+    </div>
+    <div id="banner3">
+        <a href="sequences.html"><h5>Fibonacci</h5></a>
+    </div>
+    <div id="bannerNumbers">
+    </div>
+    <div id="container">
+        <aside>
+            <ol>
+                <li>Arithmetic Sequences</li>
+                <li>Geometric Sequences</li>
+                <li>Fibonacci Sequence</li>
+            </ol>
+        </aside>
+        <main>
+            <h2>Arithmetic Sequence Generator</h2>
+            <label for="a">First Term (A₁):</label>
+            <input type="number" id="a" name="a"><br>
+
+            <label for="r">Common Difference (R):</label>
+            <input type="number" id="r" name="r"><br>
+
+            <label for="n">Number of Terms (N):</label>
+            <input type="number" id="n" name="n"><br>
+
+            <button onclick="generateArithmetic()">Generate Sequence</button>
+            <p id="arith_result"></p>
+        </main>
+        </div>
+    <footer>
+        <p>Author: Karol Uciecha</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

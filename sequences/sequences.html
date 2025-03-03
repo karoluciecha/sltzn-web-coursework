@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Sequences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="banner1">
+		<h1>Explore Number Sequences</h1>
+</div>
+	<div id="banner2">
+		<a href="numbers.html"><h5>Arithmetic Sequences</h5></a>
+	</div>
+	<div id="banner3">
+		<a href="sequences.html"><h5>Fibonacci</h5></a>
+	</div>
+	<div id="bannerSequences">
+	</div>
+	<div id="container">
+		<aside>
+			<ol>
+				<li>Arithmetic Sequences</li>
+				<li>Geometric Sequences</li>
+				<li>Fibonacci Sequence</li>
+			</ol>
+		</aside>
+		<main>
+			<h2>Fibonacci Sequence Generator</h2>
+			<label for="fib_n">Enter the number of terms:</label>
+			<input type="number" id="fib_n" name="fib_n"><br>
+			<button onclick="generateFibonacci()">Generate Fibonacci Sequence</button>
+			<p id="fib_result"></p>
+		</main>
+	</div>
+    <footer>
+        <p>Author: Karol Uciecha</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
