@@ -1,0 +1,139 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+#banner {
+    background-color: #08826A;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+#banner a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sidebar */
+#left-panel {
+    background-color: #1E9880;
+    height: 550px;
+    width: 30%;
+    float: left;
+    padding: 20px;
+}
+
+#left-panel h2 {
+    color: white;
+}
+
+#left-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#left-panel li {
+    margin: 10px 0;
+}
+
+#left-panel a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+#right-panel {
+    background-color: #9AC8BF;
+    height: 550px;
+    width: 70%;
+    float: left;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Buttons */
+button {
+    background-color: #1E9880;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #08826A;
+}
+
+#passwd {
+	padding: 5px 10px;
+}
+
+#right-panel p {
+	margin: 15px 0;
+}
+
+/* Password Strength Messages */
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Table */
+table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+th {
+    background-color: #1E9880;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #08826A;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100vw;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #left-panel, #right-panel {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    table {
+        width: 100%;
+    }
+}

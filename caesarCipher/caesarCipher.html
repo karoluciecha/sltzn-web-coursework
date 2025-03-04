@@ -1,33 +1,35 @@
-<!DOCTYPE html> q
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Szyfr Cezara</title>
+    <title>Caesar Cipher</title>
 </head>
 
 <body>
     <section id="code">
-        <form action="" method="">
-            <br><br><label for="inDecodedText">Wprowadź tekst do zakodowania:</label><br><br>
+        <form>
+            <br><br><label for="inDecodedText">Enter text to encrypt:</label><br><br>
             <input type="text" id="inDecodedText" name="inDecodedText" autofocus><br><br>
         </form>
-        <button onclick="encrypt()">Szyfruj!</button><br><br>
+        <button onclick="encrypt()">Encrypt!</button><br><br>
         <h3 id="outCodedText"></h3>
     </section>
+    
     <section id="decode">
-        <form action="" method="">
-            <br><br><label for="inCodedText">Wprowadź tekst do odkodowania:</label><br><br>
+        <form>
+            <br><br><label for="inCodedText">Enter text to decrypt:</label><br><br>
             <input type="text" id="inCodedText" name="inCodedText"><br><br>
         </form>
-        <button onclick="decrypt()">Deszyfruj!</button><br><br>
+        <button onclick="decrypt()">Decrypt!</button><br><br>
         <h3 id="outDecodedText"></h3>
     </section>
-    <footer>
 
+    <footer>
+        <p>Created by: Karol Uciecha</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
-
 </html>
