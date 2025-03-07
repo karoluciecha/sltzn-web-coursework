@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy an Apartment</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section id="left_panel">
+        <br><h1>REAL ESTATE AGENCY</h1><br>
+        <h3>OUR OFFER</h3><br>
+        <ol>
+            <li>New apartments</li>
+            <li>Houses in our city</li>
+            <li>Houses in the surrounding area</li>
+        </ol><br>
+        <h3>OUR TEAM</h3><br>
+        <table>
+            <tr>
+                <td rowspan="3">Jan Nowak<br>CEO</td>
+                <td>Anna Kowalska</td>
+            </tr>
+            <tr>
+                <td>Katarzyna Nowakowska</td>
+            </tr>
+            <tr>
+                <td>Krzysztof Kowalewski</td>
+            </tr>
+        </table>
+    </section>
+    <section id="right_panel">
+        <br><h1>APARTMENT PRICE CALCULATOR</h1><br>
+        <form id="form">
+            <label for="meters">Enter apartment size in m<sup>2</sup>:</label><br>
+            <input type="number" id="meters" name="meters"><br><br>
+            <label for="rooms">Number of rooms with network wiring:</label><br>
+            <input type="number" id="rooms" name="rooms"><br><br>
+            <input type="checkbox" id="bathroom" name="bathroom">
+            <label for="bathroom">Tiles in the bathroom?</label><br><br>
+            <input id="button" type="submit" value="CALCULATE">
+        </form>
+        <br><br><p id="result"></p>
+    </section>
+    <footer>
+        <p id="author">Website author: Karol Uciecha</p>
+        <img src="logo.png" alt="real estate">
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

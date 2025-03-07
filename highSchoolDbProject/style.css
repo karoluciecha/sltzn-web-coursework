@@ -1,0 +1,148 @@
+/* body, html {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	background-color: PaleGoldenRod;
+	box-sizing: border-box;
+	width: 100%;
+	overflow-x: hidden;
+}
+#container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+#baner, #panel_lewy, #panel_prawy, footer {
+	background-color: #ffb31c;
+	padding: 15px;
+	text-align: center;
+	box-sizing: border-box;
+}
+#baner {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#panel_lewy, #panel_prawy {
+	width: 20%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#panel_srodkowy {
+	background-color: #ffcb71;
+	width: 60%;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+th, td {
+	border: 1px solid black;
+	padding: 10px;
+	text-align: left;
+}
+button {
+	margin: 5px;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	background-color: #444;
+	color: white;
+	border-radius: 5px;
+}
+input {
+	padding: 8px;
+	margin: 5px;
+	width: 80%;
+}
+footer {
+	width: 100%;
+	padding: 15px;
+	font-size: 0.9em;
+}
+a { 
+	color: brown; 
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+} */
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	background-color: PaleGoldenRod;
+	box-sizing: border-box;
+	width: 100%;
+	overflow-x: hidden;
+}
+#container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+#banner, #left_panel, #right_panel, footer {
+	background-color: #ffb31c;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+#banner {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+#left_panel, #right_panel {
+	width: 20%;
+	min-width: 200px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#center_panel {
+	background-color: #ffcb71;
+	width: 60%;
+	min-width: 300px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+th, td {
+	border: 1px solid black;
+	padding: 10px;
+	text-align: left;
+}
+button {
+	margin: 5px;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	background-color: #444;
+	color: white;
+	border-radius: 5px;
+}
+input {
+	padding: 8px;
+	margin: 5px;
+	width: 80%;
+}
+footer {
+	width: 100%;
+	padding: 15px;
+	font-size: 0.9em;
+}
+a { 
+	color: brown; 
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+    <title>High School Database</title>
+</head>
+<body>
+    <div id="banner">
+        <h2 id='banner-title'>High School Website Project</h2>
+    </div>
+    
+    <div id="container">
+        <div id='left_panel'>
+            <h3>Downloads</h3>
+            <ul>
+                <li><a href='content/queries.txt'>SQL Queries</a></li>
+                <li><a href='content/school_new.sql'>Database</a></li>
+            </ul>
+        </div>
+    
+        <div id='center_panel'>
+            <table>
+                <tr>
+                    <th>Query Content</th>
+                    <th>Screenshot</th>
+                </tr>
+                <tr>
+                    <td>INSERT INTO student VALUES (27, "Wiktoria", "Jasny", 1);</td>
+                    <td><img src='content/queryOne.png'></td>
+                </tr>
+                <tr>
+                    <td>SELECT teacher.first_name, teacher.last_name FROM teacher INNER JOIN student ON teacher.class_id = student.class_id WHERE student.last_name = "Markiewicz";</td>
+                    <td><img src='content/queryTwo.png'></td>
+                </tr>
+                <tr>
+                    <td>CREATE USER 'Jan_Bogucki'@'localhost' IDENTIFIED BY 'jb_123';</td>
+                    <td><img src='content/queryThree.png'></td>
+                </tr>
+                <tr>
+                    <td>GRANT SELECT, INSERT, DROP ON school.student TO 'Jan_Bogucki'@'localhost';</td>
+                    <td><img src='content/queryFour.png'></td>
+                </tr>
+            </table>
+        </div>
+    
+        <div id='right_panel'>
+            <h3>Modify Properties</h3>
+            <button onclick='toggleTitle()'>Title</button>
+            <button onclick='fontColor()'>Font Color</button>
+            <button onclick='backgroundColor()'>Background Color</button>
+            <button onclick='dateLM()'>Last Modified Date</button>
+            <p id='dLM'></p>
+            <button onclick='numberElements()'>Number of TDs</button>
+            <p id='nOE'></p>
+            <button onclick='showAll()'>Show All</button>
+            <h4>Grade Average Calculation</h4>
+            Polak: <input type="text" id="polak"><br>
+            Nowak: <input type="text" id="nowak"><br>
+            Rysik: <input type="text" id="rysik"><br>
+            <input type="submit" value="Calculate" onclick="calculate()">
+            <h4>Average Grade: <span id="result"></span></h4>
+        </div>
+    </div>
+    
+    <footer id="down">
+        <h5>Website Author: Karol Uciecha</h5>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

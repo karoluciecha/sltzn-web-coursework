@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAE0;
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+nav {
+    height: 100vh;
+    width: 25vw;
+    padding: 5%;
+	float: left;
+    overflow: hidden; /* Prevent nav from scrolling */
+}
+
+main {
+    height: 81vh;
+    width: 75vw;
+    padding: 5%;
+	float: right;
+    text-align: center;
+    border-left: calc((1vh + 1vw)/10) solid #1C4670;
+    overflow: auto; /* Allow scrolling in main content only */
+}
+
+h1 {
+    color: #1C4670;
+    font-size: calc((2vh + 2vw));
+}
+
+form {
+    border: calc((1vh + 1vw)/4) dashed #1C4670;
+    padding: 2%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+#adding {
+    width: 60%;
+}
+
+input.text {
+    width: 15svw;
+}
+
+a {
+    color: #278AB0;
+    line-height: 3em;
+    text-decoration: none;
+    font-size: calc((2vh + 2vw)/2);
+}
+
+#err {
+    color: red;
+}
+
+#suc {
+    color: green;
+}
+
+#extra {
+    display: none;
+}
+
+.fieldwrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding: 1vw;
+}
+
+.pt1, .pt2 {
+    margin: auto;
+}
+
+table {
+	width: 80%;
+	margin: auto;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #1C4670;
+	padding: 10px;
+	text-align: center;
+}
+th {
+	background-color: #278AB0;
+	color: white;
+}
+td {
+	color: #1C4670;
+}
+nav {
+	min-width: 25%;
+}
