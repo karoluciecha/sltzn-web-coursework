@@ -1,0 +1,185 @@
+/* Modernized styles for your page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+#all {
+    background-color: white;
+    width: 85%;
+    max-width: 1000px;
+    min-height: 900px;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+/* Name & Logo Section */
+#header {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #0073e6;
+}
+
+#name, #logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#name {
+    width: 75%;
+}
+
+#logo {
+    width: 25%;
+    border-left: 2px solid #0073e6;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Headings */
+h1 {
+    color: #0073e6;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Content Section */
+#content {
+    display: flex;
+    width: 100%;
+    max-height: 700px; /* Limit max height to prevent overflow */
+    overflow: hidden;
+}
+
+/* Form & Fields */
+#form {
+    height: auto;
+    width: 40%;
+    box-sizing: border-box;
+    border-right: 2px solid #0073e6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+fieldset {
+    border: 2px solid #0073e6;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #eef7ff;
+}
+
+legend {
+    color: #0073e6;
+    font-weight: 600;
+}
+
+input[type="text"] {
+    width: 100%; /* Make sure inputs don’t overflow */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* Table Styling */
+#tab {
+    height: auto;
+    width: 60%;
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling if necessary */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    font-size: 1.1em;
+    color: #444;
+}
+
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+    color: #0073e6;
+}
+
+/* Footer */
+footer {
+    height: 20%;
+    width: 100%;
+    border-top: 2px solid #0073e6;
+    padding: 15px 0;
+    background-color: #eef7ff;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+#source, #time {
+    font-size: 0.9em;
+    color: #0073e6;
+}
+
+/* Error Messages */
+.error {
+    color: #ff3b30;
+    font-weight: bold;
+}
