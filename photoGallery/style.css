@@ -1,0 +1,94 @@
+/* Define color variables */
+:root {
+    --primary-color: #05386B;
+    --secondary-color: #379683;
+    --accent-color: #5CDB95;
+    --light-color: #EDF5E1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--primary-color);
+    color: var(--light-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--secondary-color);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--light-color);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Main Content */
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Album and Images */
+.album {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.album:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual Photos */
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Add hover effect for normal state */
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Fix the hover effect to prevent jumpiness */
+.photo img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}

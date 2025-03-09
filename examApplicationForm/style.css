@@ -6,27 +6,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    flex-direction: column;
+    background-color: blanchedalmond;
 }
 label.sml {
     margin-right: 10px;
 
 }
 .title {
-line-height: 5px;
 text-align: center;
 }
+
+h2.title:first-of-type {
+    margin-bottom: 0;
+}
+
+h2.title:last-of-type {
+    margin-top: 0;
+}
+
 .cent {
     text-align: center;
-    width: 80%;
+    width: 95%;
+    max-width: 1000px;
     background-color: wheat;
     border: 10px solid blanchedalmond;
     padding: 10px;
 }
 .rght {
     text-align: right;
-margin-left:auto;
-margin-right:0;
+    margin-left:auto;
+    margin-right:0;
     width: 200px;
 
     text-align: center;
@@ -38,10 +48,11 @@ label.block {
   label.block1 {
     display: inline-block;
     width: 200px;
-    margin-left: 275px;
+    text-align: left;
   }
 input.wide {
-      width: 550px;
+      width: 80%;
+      max-width: 550px;
   }
   input.hwide {
     width: 250px;
@@ -63,14 +74,27 @@ input.hwide3 {
 }
 label.left {
     display: inline-block;
-    padding-right: 100px;
+    padding-right: 25px;
     border-right: 1px solid black;
 
 }
 label.right {
     display: inline-block;
-    padding-left: 100px;
+    padding-left: 25px;
 }
 #attach {
     text-align: left;
+}
+
+section {
+    width: 80%;
+}
+footer {
+    width: 80%;
+    max-width: 850px;
+    text-align: center;
+    background-color: blanchedalmond;
+    color: black;
+    border: 10px solid blanchedalmond;
+    padding: 10px;
 }
