@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='style.css'>
+    <title>The "this" Method</title>
+</head>
+<body>
+    <div id='wrapper'>
+        <div>
+            <h1 onclick="this.innerHTML='Now there is a storm &#127785;&#9748;&#127785;'; this.style.color='blue';"
+                ondblclick="this.innerHTML='The sun is shining now ☀️&#127780;🥵'; this.style.color='orange';"
+                onmouseout="this.innerHTML='This is an umbrella ☂️'; this.style.color='black';">
+                This is an umbrella ☂️</h1>
+        </div>
+        <div>
+            <img onmouseenter="this.style.transition='all 0.5s ease-in-out'; this.style.transform='rotate(360deg) scale(1.2)'; this.style.boxShadow='0 0 40px cyan';"
+            onclick="this.src='Pulsefire_Ekko.webp'; this.style.transition = 'all 1s'; this.style.transform = 'rotate3d(2, 2, -5, 720deg)';"
+            onmouseleave="this.src='Ekko.webp'; this.style.transition='all 0.5s ease-in-out'; this.style.transform='rotate(0deg) scale(1)'; this.style.boxShadow='0 0 20px red';"
+            src='Ekko.webp'>
+        
+            <h3 ondrag="this.style.display='none';">Hover over Ekko to give him a skin</h3>
+        </div>
+</body>
+</html>

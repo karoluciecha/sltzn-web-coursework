@@ -1,0 +1,98 @@
+/* CSS Reset - Normalize Everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Wild background animation */
+@keyframes crazyBackground {
+    0% { background: red; }
+    20% { background: orange; }
+    40% { background: yellow; }
+    60% { background: green; }
+    80% { background: blue; }
+    100% { background: purple; }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    animation: crazyBackground 5s infinite linear;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    overflow: hidden;
+}
+
+/* Wrapper with neon effect */
+#wrapper {
+    background: linear-gradient(45deg, cyan, magenta, yellow);
+    padding: 30px 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px white;
+    text-align: center;
+    animation: pulseGlow 1s infinite alternate;
+}
+
+/* Flashy text animations */
+@keyframes textFlash {
+    0% { color: red; transform: scale(1); }
+    50% { color: cyan; transform: scale(1.2); }
+    100% { color: lime; transform: scale(1); }
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    animation: textFlash 2s infinite;
+}
+
+/* Button style for interaction */
+h1:hover {
+    text-shadow: 0 0 20px white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Wild image effects */
+img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 0 20px red;
+    margin: 30px 0;
+}
+
+/* Keyframes for glowing wrapper */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 10px red; }
+    50% { box-shadow: 0 0 30px lime; }
+    100% { box-shadow: 0 0 10px blue; }
+}
+
+/* Draggable text effect */
+h3 {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+    transition: all 0.3s;
+}
+
+h3:hover {
+    transform: skew(10deg);
+    color: yellow;
+}
+
+/* Firework-like random sparks */
+@keyframes sparks {
+    0% { text-shadow: 0 0 10px red; }
+    50% { text-shadow: 0 0 20px yellow; }
+    100% { text-shadow: 0 0 10px blue; }
+}
+
+h1, h3 {
+    animation: sparks 2s infinite alternate;
+}
