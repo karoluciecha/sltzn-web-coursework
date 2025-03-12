@@ -17,9 +17,9 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     height: 100vh;
     animation: crazyBackground 5s infinite linear;
     font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -27,10 +27,11 @@ body {
 }
 
 /* Wrapper with neon effect */
-#wrapper {
+.wrapper {
     background: linear-gradient(45deg, cyan, magenta, yellow);
     padding: 30px 60px;
     border-radius: 20px;
+    width: 45%;
     box-shadow: 0 0 30px white;
     text-align: center;
     animation: pulseGlow 1s infinite alternate;
@@ -43,27 +44,30 @@ body {
     100% { color: lime; transform: scale(1); }
 }
 
-h1 {
+h1.ekkoText {
     text-transform: uppercase;
-    font-weight: bold;
     cursor: pointer;
     animation: textFlash 2s infinite;
 }
 
 /* Button style for interaction */
-h1:hover {
+h1.ekkoText:hover {
     text-shadow: 0 0 20px white;
     transition: all 0.3s ease-in-out;
 }
 
 /* Wild image effects */
-img {
+img.ekko {
     border-radius: 50%;
     width: 250px;
     height: 250px;
     object-fit: cover;
     box-shadow: 0 0 20px red;
     margin: 30px 0;
+}
+
+img#randomGif {
+    box-shadow: 0 0 20px red;
 }
 
 /* Keyframes for glowing wrapper */
@@ -93,6 +97,49 @@ h3:hover {
     100% { text-shadow: 0 0 10px blue; }
 }
 
-h1, h3 {
+h1.ekkoText, h3 {
     animation: sparks 2s infinite alternate;
+}
+
+/* Crazy Effects for h1.gifText */
+@keyframes glitch {
+    0% { text-shadow: 5px 5px red, -5px -5px cyan; transform: skewX(0deg); }
+    25% { text-shadow: -5px 5px lime, 5px -5px magenta; transform: skewX(10deg); }
+    50% { text-shadow: 5px -5px yellow, -5px 5px blue; transform: skewX(-10deg); }
+    75% { text-shadow: -5px -5px cyan, 5px 5px red; transform: skewX(5deg); }
+    100% { text-shadow: 5px 5px red, -5px -5px cyan; transform: skewX(0deg); }
+}
+
+@keyframes neonGlow {
+    0% { color: white; text-shadow: 0 0 5px red, 0 0 10px blue, 0 0 20px lime; }
+    50% { color: yellow; text-shadow: 0 0 10px cyan, 0 0 20px magenta, 0 0 40px red; }
+    100% { color: white; text-shadow: 0 0 5px red, 0 0 10px blue, 0 0 20px lime; }
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-2px, -2px); }
+    20% { transform: translate(2px, -2px); }
+    30% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, 2px); }
+    50% { transform: translate(0, 0); }
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    10% { opacity: 0.8; }
+    20% { opacity: 1; }
+    30% { opacity: 0.6; }
+    40% { opacity: 1; }
+    50% { opacity: 0.9; }
+    60% { opacity: 1; }
+    70% { opacity: 0.7; }
+    80% { opacity: 1; }
+    90% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+h1.gifText {
+    text-transform: uppercase;
+    animation: glitch 1s infinite alternate, neonGlow 2s infinite alternate, shake 0.5s infinite, flicker 2s infinite;
 }

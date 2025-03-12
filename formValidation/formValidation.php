@@ -1,3 +1,19 @@
+<?php
+session_start(); // Start session to store timezone
+
+// Check if timezone is sent via AJAX and save it in a session
+if (isset($_POST['timezone'])) {
+    $_SESSION['user_timezone'] = $_POST['timezone'];
+    exit; // Stop execution after saving timezone
+}
+
+// If a session timezone exists, use it; otherwise, default to UTC
+if (isset($_SESSION['user_timezone'])) {
+    date_default_timezone_set($_SESSION['user_timezone']);
+} else {
+    date_default_timezone_set('UTC');
+}
+?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -88,9 +104,31 @@
                 <?php echo "<p>The open file is: " . basename(__FILE__) . "</p>"; ?>
             </div>
             <div id='time'>
-                <?php echo "<p>" . date("d.m.Y") . ", current time: " . date("H:i") . "<p>"; ?>
+                <?php
+                echo "<p>Today is " . date("l, d F Y") . ", time " . date("H:i:s") . "</p>";
+                ?>
             </div>
         </footer>
     </div>
 </body>
+<script>
+    // Detect user's timezone
+    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    // Check if the timezone is already stored in session via PHP
+    fetch("check_session.php")
+    .then(response => response.text())
+    .then(savedTimezone => {
+        if (savedTimezone !== userTimezone) {
+            // Send timezone to PHP using AJAX
+            fetch(window.location.href, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: "timezone=" + encodeURIComponent(userTimezone)
+            }).then(() => location.reload()); // Reload after setting session
+        }
+    });
+</script>
 </html>

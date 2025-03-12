@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html, body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: black;
+    margin: 0;
+    font-size: 0;
+    color: #00ff00;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh; /* Ensure full viewport height */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+#clock {
+    font-size: 10px;
+    width: 500px;
+    height: 450px;
+	padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Center with absolute positioning */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Adjust to be perfectly centered */
+    margin: 0;
+}
+
+.digit-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Equal spacing */
+}
+
+/* Center the colons inside the digit groups */
+.colon {
+    font-size: 80px;
+    color: #00ff00;
+    text-shadow: 
+        0 0 10px #00ff00, 
+        0 0 20px #00ff00, 
+        0 0 40px rgba(0, 255, 0, 0.8);
+}
+
+.digit {
+    display: inline-block;
+    width: 60px;
+    height: auto;
+	overflow: hidden;
+}
+
+.digit .digit-number {
+    color: rgba(255, 255, 255, 0.1);
+	font-size: 30px;
+    transform: rotate(-90deg);
+    transition: font-size 200ms, transform 350ms, color 150ms;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active digit with neon glow */
+.digit .digit-number.highlight {
+    color: #00ff00;
+    font-size: 100px;
+    transform: rotate(0deg);
+    text-shadow: 
+        0 0 10px #00ff00, 
+        0 0 20px #00ff00, 
+        0 0 40px #00ff00, 
+        0 0 80px rgba(0, 255, 0, 0.8);
+    animation: glitch 0.3s infinite alternate;
+}
+
+/* Glitch effect */
+@keyframes glitch {
+    0% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; }
+    100% { text-shadow: 0 0 8px #00ff00, 0 0 15px #00ff00; }
+}
+
+.matrix-rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+    font-size: 20px;
+    color: #00ff00;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.matrix-rain span {
+    position: absolute;
+    display: block;
+    animation: matrixFall linear infinite;
+}
+
+@keyframes matrixFall {
+    0% { transform: translateY(-100%); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
